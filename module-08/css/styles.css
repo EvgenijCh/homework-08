@@ -6,8 +6,13 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
 ul,
-li {
+li,
+p {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   list-style: none;
 }
@@ -45,14 +50,12 @@ a {
   clip: rect(0 0 0 0);
   margin: -1px;
 }
-
 .container {
   width: 320px;
   margin: 0 auto;
-}
-
-.wrapper {
-  padding-bottom: 138px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
 }
 
 .main-header {
@@ -60,6 +63,8 @@ a {
   background-size: cover;
   background-position: top;
   background-color: #1a1915;
+  margin: 0 auto;
+  padding-bottom: 138px;
 }
 
 .menu-navigation {
@@ -67,7 +72,6 @@ a {
   flex-direction: column-reverse;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
 }
 
 .navigation-list-btn {
@@ -93,15 +97,17 @@ a {
   font-weight: bold;
   text-transform: uppercase;
   line-height: 1.2;
+  margin-bottom: 30px;
 }
 
 .title {
-  font-size: 30px;
+  font-size: 28px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .description {
@@ -112,6 +118,7 @@ a {
   color: rgb(255, 255, 255);
   text-align: center;
   margin-bottom: 20px;
+  font-weight: 300;
 }
 
 .btn-center {
@@ -120,7 +127,7 @@ a {
   width: 280px;
   margin: 0 auto;
   text-align: center;
-  padding: 12px 8px;
+  padding: 14px 14px;
   font-size: 14px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
@@ -241,19 +248,21 @@ a {
 @media (min-width: 768px) {
   .main-header {
     background-image: url(../img/img_t/VectorSmartObjec768.png);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
 @media (min-width: 768px) {
   .container {
-    width: 672px;
+    width: 670px;
   }
 
   .menu-navigation {
     flex-direction: unset;
     justify-content: space-between;
     align-items: baseline;
-    padding: 40px 48px 0px 48px;
   }
 
   .title {
@@ -267,6 +276,9 @@ a {
     font-size: 24px;
     width: 400px;
     margin-bottom: 32px;
+  }
+  .btn-center {
+    width: 226px;
   }
 
   .partners-list {
@@ -297,9 +309,12 @@ a {
   .partners-list-item {
     margin-bottom: 38px;
   }
+  .btn-partners {
+    width: 190px;
+  }
 }
 
-@media (min-width: 321px) {
+@media (min-width: 1024px) {
   .main-header {
     background-image: url(../img/img_d/VectorSmartObjecDt.png);
   }
@@ -312,9 +327,6 @@ a {
 
   .description {
     width: 404px;
-  }
-  .btn-center {
-    width: 226px;
   }
 
   .partners-list {
