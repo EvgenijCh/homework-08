@@ -81,7 +81,6 @@ a {
   margin-bottom: 140px;
 }
 
-.navigation-list-btn:hover,
 .navigation-list-btn:focus {
   border: 2px solid;
   border-radius: 30px;
@@ -116,16 +115,21 @@ a {
 }
 
 .btn-center {
-  border-radius: 20px;
-  background-color: rgb(255, 78, 80);
+  border-radius: 30px;
+  background-color: #ff4e50;
   width: 280px;
   margin: 0 auto;
   text-align: center;
-  padding: 12px 0px 12px 0px;
+  padding: 12px 8px;
   font-size: 14px;
   font-family: "Montserrat";
   color: rgb(255, 255, 255);
   font-weight: bold;
+}
+
+.btn-center:hover {
+  box-shadow: 0px 0px 3px 3px;
+  transition: all 0.2s linear;
 }
 
 .prtners-title-text {
@@ -229,6 +233,10 @@ a {
   font-weight: bold;
   margin-bottom: 56px;
 }
+.btn-partners:hover {
+  box-shadow: 0px 0px 3px 3px;
+  transition: all 0.2s linear;
+}
 
 @media (min-width: 768px) {
   .main-header {
@@ -305,8 +313,14 @@ a {
   .description {
     width: 404px;
   }
+  .btn-center {
+    width: 226px;
+  }
 
   .partners-list {
     padding: 0;
+  }
+  .btn-partners {
+    width: 188px;
   }
 }
