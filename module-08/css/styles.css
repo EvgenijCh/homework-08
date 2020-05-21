@@ -111,14 +111,11 @@ a {
 }
 
 .description {
-  width: 220px;
-  margin: 0 auto;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Roboto";
   color: rgb(255, 255, 255);
   text-align: center;
   margin-bottom: 20px;
-  font-weight: 300;
 }
 
 .btn-center {
@@ -274,7 +271,6 @@ a {
 
   .description {
     font-size: 24px;
-    width: 400px;
     margin-bottom: 32px;
   }
   .btn-center {
@@ -325,8 +321,9 @@ a {
     width: 940px;
   }
 
-  .description {
-    width: 404px;
+  .wrapper {
+    width: 500px;
+    margin: 0 auto;
   }
 
   .partners-list {
